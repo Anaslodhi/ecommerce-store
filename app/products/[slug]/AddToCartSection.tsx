@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Minus, Plus, ShoppingCart } from "lucide-react";
+import { Minus, Plus, ShoppingCart, Check } from "lucide-react";
 import { Product } from "@/types";
+import { useCart } from "@/lib/cartContext";
 
 interface AddToCartSectionProps {
   product: Product;
@@ -10,9 +11,17 @@ interface AddToCartSectionProps {
 
 export default function AddToCartSection({ product }: AddToCartSectionProps) {
   const [quantity, setQuantity] = useState(1);
+  const [added, setAdded] = useState(false);
+  const { addItem } = useCart();
 
   const increment = () => setQuantity((q) => Math.min(q + 1, 10));
   const decrement = () => setQuantity((q) => Math.max(q - 1, 1));
+
+  const handleAddToCart = () => {
+    addItem(product, quantity);
+    setAdded(true);
+    setTimeout(() => setAdded(false), 2000);
+  };
 
   return (
     <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -41,13 +50,29 @@ export default function AddToCartSection({ product }: AddToCartSectionProps) {
 
       {/* Add to Cart Button */}
       <button
-        disabled={!product.inStock}
-        className="group relative flex flex-1 items-center justify-center gap-3 overflow-hidden rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-violet-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-violet-500/40 disabled:opacity-50 disabled:cursor-not-allowed sm:flex-initial"
+        onClick={handleAddToCart}
+        disabled={!product.inStock || added}
+        className={`group relative flex flex-1 items-center justify-center gap-3 overflow-hidden rounded-xl px-8 py-3.5 text-sm font-bold text-white shadow-lg transition-all duration-300 sm:flex-initial ${
+          added
+            ? "bg-emerald-600 shadow-emerald-500/25"
+            : "bg-gradient-to-r from-violet-600 to-indigo-600 shadow-violet-500/25 hover:shadow-xl hover:shadow-violet-500/40"
+        } disabled:cursor-not-allowed disabled:opacity-50`}
       >
-        <ShoppingCart className="h-5 w-5" />
-        <span>{product.inStock ? "Add to Cart" : "Out of Stock"}</span>
+        {added ? (
+          <>
+            <Check className="h-5 w-5" />
+            <span>Added to Cart!</span>
+          </>
+        ) : (
+          <>
+            <ShoppingCart className="h-5 w-5" />
+            <span>{product.inStock ? "Add to Cart" : "Out of Stock"}</span>
+          </>
+        )}
         {/* Shimmer */}
-        <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+        {!added && (
+          <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+        )}
       </button>
     </div>
   );

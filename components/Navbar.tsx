@@ -11,6 +11,7 @@ import {
   Zap,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useCart } from "@/lib/cartContext";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -20,8 +21,11 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const { getItemCount } = useCart();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const itemCount = getItemCount();
 
   // Track scroll for backdrop blur effect
   useEffect(() => {
@@ -105,6 +109,11 @@ export default function Navbar() {
             aria-label="Shopping Cart"
           >
             <ShoppingCart className="h-5 w-5" />
+            {itemCount > 0 && (
+              <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 px-1 text-[10px] font-bold text-white shadow-lg shadow-violet-500/30">
+                {itemCount > 99 ? "99+" : itemCount}
+              </span>
+            )}
           </Link>
           <Link
             href="/login"
@@ -128,6 +137,11 @@ export default function Navbar() {
             aria-label="Shopping Cart"
           >
             <ShoppingCart className="h-5 w-5" />
+            {itemCount > 0 && (
+              <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 px-1 text-[10px] font-bold text-white shadow-lg shadow-violet-500/30">
+                {itemCount > 99 ? "99+" : itemCount}
+              </span>
+            )}
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -190,6 +204,11 @@ export default function Navbar() {
           >
             <ShoppingCart className="h-5 w-5" />
             Cart
+            {itemCount > 0 && (
+              <span className="ml-auto rounded-full bg-violet-500/20 px-2 py-0.5 text-xs font-bold text-violet-400">
+                {itemCount}
+              </span>
+            )}
           </Link>
           <Link
             href="/login"
