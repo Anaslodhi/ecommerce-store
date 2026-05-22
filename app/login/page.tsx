@@ -2,6 +2,8 @@
 
 import { useState, FormEvent } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
 import { Zap, Mail, Lock, Eye, EyeOff, ArrowRight } from "lucide-react";
 
 interface FormErrors {
@@ -16,6 +18,7 @@ export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
@@ -36,16 +39,29 @@ export default function LoginPage() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      const res = await signIn("credentials", {
+        redirect: false,
+        email,
+        password,
+      });
+
+      if (res?.error) {
+        throw new Error(res.error);
+      }
+
+      router.push("/");
+      router.refresh();
+    } catch (error: any) {
+      setErrors({ email: error.message || "Invalid credentials" });
+    } finally {
       setIsSubmitting(false);
-      alert("Login functionality will be connected to the backend in a future task.");
-    }, 1000);
+    }
   };
 
   return (

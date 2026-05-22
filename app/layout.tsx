@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ChatWidget from "@/components/ChatWidget";
 import { CartProvider } from "@/lib/cartContext";
 import "./globals.css";
 
@@ -26,6 +27,8 @@ export const metadata: Metadata = {
   ],
 };
 
+import Providers from "@/components/Providers";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,11 +37,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`} data-scroll-behavior="smooth">
       <body className="flex min-h-full flex-col font-sans">
-        <CartProvider>
-          <Navbar />
-          <main className="flex-1 pt-16">{children}</main>
-          <Footer />
-        </CartProvider>
+        <Providers>
+          <CartProvider>
+            <Navbar />
+            <main className="flex-1 pt-16">{children}</main>
+            <Footer />
+            <ChatWidget />
+          </CartProvider>
+        </Providers>
       </body>
     </html>
   );

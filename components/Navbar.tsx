@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/lib/cartContext";
+import { useSession, signOut } from "next-auth/react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -24,6 +25,7 @@ export default function Navbar() {
   const { getItemCount } = useCart();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { data: session } = useSession();
 
   const itemCount = getItemCount();
 
@@ -115,18 +117,32 @@ export default function Navbar() {
               </span>
             )}
           </Link>
-          <Link
-            href="/login"
-            className={cn(
-              "flex h-10 items-center gap-2 rounded-lg px-4 text-sm font-medium transition-all duration-200",
-              isActive("/login") || isActive("/signup")
-                ? "bg-violet-500/10 text-violet-400"
-                : "text-[var(--text-secondary)] hover:bg-[var(--hover-bg)] hover:text-[var(--text-primary)]"
-            )}
-          >
-            <User className="h-4 w-4" />
-            <span>Login</span>
-          </Link>
+          {session ? (
+            <div className="flex items-center gap-4">
+              <span className="text-sm font-medium text-[var(--text-primary)]">
+                {session.user?.name?.split(" ")[0] || "User"}
+              </span>
+              <button
+                onClick={() => signOut({ callbackUrl: "/" })}
+                className="flex h-10 items-center gap-2 rounded-lg px-4 text-sm font-medium text-[var(--text-secondary)] transition-all duration-200 hover:bg-red-500/10 hover:text-red-400"
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <Link
+              href="/login"
+              className={cn(
+                "flex h-10 items-center gap-2 rounded-lg px-4 text-sm font-medium transition-all duration-200",
+                isActive("/login") || isActive("/signup")
+                  ? "bg-violet-500/10 text-violet-400"
+                  : "text-[var(--text-secondary)] hover:bg-[var(--hover-bg)] hover:text-[var(--text-primary)]"
+              )}
+            >
+              <User className="h-4 w-4" />
+              <span>Login</span>
+            </Link>
+          )}
         </div>
 
         {/* Mobile Menu Button */}
@@ -210,18 +226,28 @@ export default function Navbar() {
               </span>
             )}
           </Link>
-          <Link
-            href="/login"
-            className={cn(
-              "flex items-center gap-3 rounded-lg px-4 py-3 text-base font-medium transition-colors duration-200",
-              isActive("/login") || isActive("/signup")
-                ? "bg-violet-500/10 text-violet-400"
-                : "text-[var(--text-secondary)] hover:bg-[var(--hover-bg)] hover:text-[var(--text-primary)]"
-            )}
-          >
-            <User className="h-5 w-5" />
-            Login / Sign Up
-          </Link>
+          {session ? (
+            <button
+              onClick={() => signOut({ callbackUrl: "/" })}
+              className="flex w-full items-center gap-3 rounded-lg px-4 py-3 text-base font-medium text-[var(--text-secondary)] transition-colors duration-200 hover:bg-red-500/10 hover:text-red-400"
+            >
+              <User className="h-5 w-5" />
+              Logout ({session.user?.name?.split(" ")[0] || "User"})
+            </button>
+          ) : (
+            <Link
+              href="/login"
+              className={cn(
+                "flex items-center gap-3 rounded-lg px-4 py-3 text-base font-medium transition-colors duration-200",
+                isActive("/login") || isActive("/signup")
+                  ? "bg-violet-500/10 text-violet-400"
+                  : "text-[var(--text-secondary)] hover:bg-[var(--hover-bg)] hover:text-[var(--text-primary)]"
+              )}
+            >
+              <User className="h-5 w-5" />
+              Login / Sign Up
+            </Link>
+          )}
         </div>
       </div>
     </header>

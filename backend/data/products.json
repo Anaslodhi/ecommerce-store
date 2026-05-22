@@ -1,0 +1,519 @@
+[
+  {
+    "id": 1,
+    "name": "ProBook Ultra 16\" Laptop",
+    "category": "laptops",
+    "price": 1499.99,
+    "description": "The ProBook Ultra 16\" delivers powerhouse performance in a sleek aluminum chassis designed for professionals and creatives alike. Equipped with the latest Intel Core i7-14700H processor and 32GB of DDR5 RAM, it handles demanding multitasking, video editing, and software development with ease. The stunning 16-inch 2.5K IPS display with 120Hz refresh rate offers vibrant, color-accurate visuals that bring your work to life. With a massive 1TB NVMe SSD and all-day 12-hour battery life, this laptop is your ultimate productivity companion whether you're at the desk or on the go.",
+    "specs": {
+      "processor": "Intel Core i7-14700H",
+      "ram": "32GB DDR5-5600",
+      "storage": "1TB NVMe PCIe 4.0 SSD",
+      "display": "16\" 2.5K IPS, 120Hz, 400 nits",
+      "graphics": "Intel Arc A370M",
+      "battery": "84Wh, up to 12 hours",
+      "weight": "1.85 kg (4.07 lbs)",
+      "os": "Windows 11 Pro",
+      "ports": "2x Thunderbolt 4, USB-A 3.2, HDMI 2.1, SD card reader"
+    },
+    "features": [
+      "Thunderbolt 4 connectivity for ultra-fast data transfer and external displays",
+      "AI-powered noise cancellation for crystal-clear video calls",
+      "Backlit keyboard with 1.5mm key travel for comfortable typing",
+      "Fingerprint reader and IR camera for Windows Hello biometric login",
+      "MIL-STD-810H durability tested for extreme conditions"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "name": "ZenBook 14 OLED Ultrabook",
+    "category": "laptops",
+    "price": 1099.99,
+    "description": "The ZenBook 14 OLED redefines ultraportable computing with its breathtaking 14-inch 2.8K OLED display that covers 100% of the DCI-P3 color gamut. Weighing just 1.2 kg, it slips effortlessly into any bag while packing serious power with an AMD Ryzen 7 8840U processor and 16GB of LPDDR5X memory. The fanless design ensures whisper-quiet operation during meetings and library sessions, while the 75Wh battery keeps you productive for up to 14 hours. ASUS's ErgoLift hinge tilts the keyboard for a more comfortable typing angle, making long work sessions a breeze.",
+    "specs": {
+      "processor": "AMD Ryzen 7 8840U",
+      "ram": "16GB LPDDR5X-6400",
+      "storage": "512GB NVMe PCIe 4.0 SSD",
+      "display": "14\" 2.8K OLED, 90Hz, 550 nits, 100% DCI-P3",
+      "graphics": "AMD Radeon 780M integrated",
+      "battery": "75Wh, up to 14 hours",
+      "weight": "1.2 kg (2.65 lbs)",
+      "os": "Windows 11 Home",
+      "ports": "USB-C 3.2, USB-A 3.2, HDMI 2.1, microSD"
+    },
+    "features": [
+      "Stunning 2.8K OLED display with HDR True Black 600 certification",
+      "Ultra-lightweight 1.2 kg magnesium-aluminum alloy chassis",
+      "Harman Kardon certified quad-speaker audio system",
+      "NumberPad 2.0 integrated into the trackpad for quick calculations",
+      "Military-grade MIL-STD-810H durability certification"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 3,
+    "name": "ROG Strix G16 Gaming Laptop",
+    "category": "gaming",
+    "price": 1799.99,
+    "description": "Dominate every battlefield with the ROG Strix G16, a gaming powerhouse built for competitive esports and AAA titles. The NVIDIA GeForce RTX 4070 graphics card paired with an Intel Core i9-14900HX processor delivers blistering frame rates on the 16-inch QHD 240Hz display with a 3ms response time. An advanced vapor chamber cooling system with liquid metal thermal compound keeps thermals in check even during marathon gaming sessions. The per-key RGB keyboard with anti-ghosting technology ensures every keystroke is registered, while Dolby Atmos spatial audio immerses you in every game world.",
+    "specs": {
+      "processor": "Intel Core i9-14900HX",
+      "ram": "32GB DDR5-5600",
+      "storage": "1TB NVMe PCIe 4.0 SSD (2x M.2 slots)",
+      "display": "16\" QHD (2560x1600), 240Hz, 3ms, Dolby Vision",
+      "graphics": "NVIDIA GeForce RTX 4070 8GB GDDR6",
+      "battery": "90Wh, up to 8 hours",
+      "weight": "2.5 kg (5.51 lbs)",
+      "os": "Windows 11 Home",
+      "ports": "Thunderbolt 4, USB-C 3.2, 2x USB-A 3.2, HDMI 2.1, RJ-45 2.5G"
+    },
+    "features": [
+      "NVIDIA GeForce RTX 4070 for ray tracing and DLSS 3 performance",
+      "240Hz QHD display with Adaptive-Sync for tear-free gaming",
+      "Vapor chamber cooling with liquid metal for sustained performance",
+      "Per-key RGB backlit keyboard with Aura Sync customization",
+      "2.5G Ethernet and Wi-Fi 6E for ultra-low latency online gaming"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": 4,
+    "name": "Galaxy Ultra S25 5G",
+    "category": "phones",
+    "price": 1299.99,
+    "description": "The Galaxy Ultra S25 5G is Samsung's most advanced smartphone, featuring a titanium frame and the powerful Snapdragon 8 Elite chipset for unmatched performance and durability. Its breathtaking 6.9-inch Dynamic AMOLED 2X display with 3120x1440 resolution and 120Hz adaptive refresh rate delivers silky-smooth scrolling and vivid HDR10+ content. The quad-camera system led by a 200MP main sensor captures incredible detail in every shot, while the 5000mAh battery with 45W super fast charging ensures you stay powered throughout the day. Galaxy AI features like Circle to Search and Live Translate make this phone your intelligent companion for everyday tasks.",
+    "specs": {
+      "processor": "Snapdragon 8 Elite for Galaxy",
+      "ram": "12GB",
+      "storage": "512GB",
+      "display": "6.9\" Dynamic AMOLED 2X, 3120x1440, 120Hz",
+      "camera": "200MP main + 50MP periscope telephoto (5x) + 12MP ultrawide + 10MP telephoto (3x)",
+      "battery": "5000mAh, 45W wired, 15W wireless",
+      "os": "Android 15 with One UI 7",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.4, UWB",
+      "durability": "IP68, Gorilla Armor, Titanium frame"
+    },
+    "features": [
+      "200MP main camera with advanced Nightography for stunning low-light photos",
+      "Galaxy AI with Circle to Search, Live Translate, and Chat Assist",
+      "Titanium frame with Gorilla Armor for ultimate durability",
+      "S Pen built-in with Air Actions gesture control",
+      "7 years of OS and security updates guaranteed"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 5,
+    "name": "iPhone 16 Pro Max",
+    "category": "phones",
+    "price": 1199.99,
+    "description": "The iPhone 16 Pro Max pushes the boundaries of smartphone innovation with the A18 Pro chip, Apple's most powerful mobile processor built on a 3nm architecture. The 6.9-inch Super Retina XDR display with ProMotion 120Hz and always-on technology delivers a stunning visual experience with up to 2000 nits of peak outdoor brightness. Apple Intelligence powers advanced AI features including an upgraded Siri, Writing Tools, and Image Playground for creative expression. The pro-grade 48MP Fusion camera system with a 5x optical zoom tetraprism lens captures professional-quality photos and Cinematic video in 4K at 120fps, making it the ultimate device for content creators.",
+    "specs": {
+      "processor": "A18 Pro (3nm, 6-core)",
+      "ram": "8GB",
+      "storage": "256GB",
+      "display": "6.9\" Super Retina XDR OLED, 2868x1320, 120Hz ProMotion",
+      "camera": "48MP Fusion + 48MP Ultrawide + 12MP 5x Telephoto",
+      "battery": "4685mAh, 27W wired, 25W MagSafe wireless",
+      "os": "iOS 18",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.3, UWB, NFC",
+      "durability": "IP68, Ceramic Shield front"
+    },
+    "features": [
+      "Apple Intelligence with enhanced Siri, Writing Tools, and Image Playground",
+      "48MP Fusion camera with 5x optical zoom tetraprism lens",
+      "Action Button and Camera Control for quick access to favorite features",
+      "Titanium design — the lightest Pro Max ever made",
+      "USB-C with USB 3 speeds for fast data transfer and ProRes recording"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": 6,
+    "name": "AirPods Pro 3",
+    "category": "audio",
+    "price": 249.99,
+    "description": "The AirPods Pro 3 deliver the most immersive audio experience Apple has ever created, featuring the new H3 chip with twice the noise cancellation power of the previous generation. Adaptive Audio intelligently blends Active Noise Cancellation and Transparency mode, automatically adjusting sound based on your environment so you always hear what matters. The custom-built driver and amplifier produce rich, detailed sound with deep bass and crystal-clear highs, while Personalized Spatial Audio with dynamic head tracking creates a theater-like experience. With up to 6 hours of listening time per charge and 30 hours total with the MagSafe charging case, they're built for all-day use.",
+    "specs": {
+      "chip": "Apple H3",
+      "driver": "Custom high-excursion Apple driver",
+      "noise_cancellation": "Active Noise Cancellation (2x improvement)",
+      "battery_earbuds": "6 hours (ANC on)",
+      "battery_case": "30 hours total",
+      "connectivity": "Bluetooth 5.4",
+      "water_resistance": "IP54 earbuds and case",
+      "charging": "MagSafe, Qi2, Lightning, USB-C, Apple Watch charger",
+      "weight": "5.3g per earbud"
+    },
+    "features": [
+      "Adaptive Audio that seamlessly blends ANC and Transparency modes",
+      "Personalized Spatial Audio with dynamic head tracking",
+      "Conversation Awareness automatically lowers volume when you speak",
+      "Touch control on stem for media, calls, and Siri activation",
+      "Find My with Precision Finding and built-in speaker on case"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": 7,
+    "name": "iPad Pro M4 12.9\"",
+    "category": "tablets",
+    "price": 1099.99,
+    "description": "The iPad Pro M4 12.9\" is the thinnest and most powerful iPad ever, driven by the groundbreaking M4 chip with a 10-core GPU and hardware-accelerated ray tracing. The Ultra Retina XDR display powered by a tandem OLED panel delivers an extraordinary visual experience with 1000 nits sustained brightness, perfect blacks, and P3 wide color. Whether you're editing 4K video in Final Cut Pro, designing in Procreate, or running desktop-class apps, the M4 handles it all with unprecedented efficiency. With support for the Apple Pencil Pro, Magic Keyboard, and Thunderbolt connectivity, this tablet truly replaces your laptop.",
+    "specs": {
+      "processor": "Apple M4 (10-core CPU, 10-core GPU)",
+      "ram": "16GB unified memory",
+      "storage": "256GB",
+      "display": "12.9\" Ultra Retina XDR tandem OLED, 2732x2048, 120Hz ProMotion",
+      "camera": "12MP wide rear + 12MP TrueDepth front with Center Stage",
+      "battery": "Up to 10 hours web browsing",
+      "connectivity": "Wi-Fi 6E, Bluetooth 5.3, optional 5G",
+      "ports": "Thunderbolt / USB 4",
+      "weight": "579g (1.28 lbs)"
+    },
+    "features": [
+      "M4 chip with hardware-accelerated ray tracing and mesh shading",
+      "Tandem OLED Ultra Retina XDR display with 1000 nits sustained brightness",
+      "Apple Pencil Pro support with squeeze gesture and barrel roll",
+      "Thunderbolt port for connecting external displays and storage",
+      "Face ID with landscape orientation for seamless unlocking"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": 8,
+    "name": "ThinkPad X1 Carbon Gen 12",
+    "category": "laptops",
+    "price": 1649.99,
+    "description": "The ThinkPad X1 Carbon Gen 12 continues Lenovo's legendary business laptop lineage with Intel Core Ultra 7 155H processing power and Intel vPro Enterprise platform for uncompromising security and manageability. The 14-inch 2.8K OLED display with 400 nits brightness and 100% DCI-P3 coverage makes spreadsheets, documents, and presentations look stunning. At just 1.09 kg, it's one of the lightest 14-inch business laptops available, yet it doesn't compromise on the iconic ThinkPad keyboard that professionals love. With comprehensive security features including a dTPM 2.0, Smart Card reader, and human presence detection, your data stays protected at all times.",
+    "specs": {
+      "processor": "Intel Core Ultra 7 155H",
+      "ram": "32GB LPDDR5X-7500",
+      "storage": "1TB NVMe PCIe 4.0 SSD",
+      "display": "14\" 2.8K OLED, 400 nits, 100% DCI-P3, anti-reflective",
+      "graphics": "Intel Arc integrated",
+      "battery": "57Wh, up to 15 hours",
+      "weight": "1.09 kg (2.4 lbs)",
+      "os": "Windows 11 Pro",
+      "ports": "2x Thunderbolt 4, 2x USB-A 3.2, HDMI 2.1"
+    },
+    "features": [
+      "Intel vPro Enterprise platform for business-grade security and remote management",
+      "Legendary ThinkPad keyboard with TrackPoint and 1.5mm key travel",
+      "Human presence detection for automatic wake and lock",
+      "Carbon fiber and magnesium hybrid chassis weighing just 1.09 kg",
+      "Rapid Charge: 80% battery in just 60 minutes"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 9,
+    "name": "Pixel 9 Pro",
+    "category": "phones",
+    "price": 999.99,
+    "description": "The Pixel 9 Pro showcases Google's best AI-first smartphone experience, powered by the custom Tensor G4 chip designed specifically for on-device machine learning and AI tasks. The 6.3-inch Super Actua LTPO OLED display with 2856x1280 resolution delivers vivid, smooth visuals at up to 120Hz while being exceptionally power-efficient. Google's advanced computational photography suite — including Magic Eraser, Best Take, and the new AI-powered Zoom Enhance — transforms every user into a professional photographer. With 7 years of guaranteed updates, Gemini AI integration, and the cleanest Android experience available, the Pixel 9 Pro is the smartest phone you can buy.",
+    "specs": {
+      "processor": "Google Tensor G4",
+      "ram": "16GB",
+      "storage": "256GB",
+      "display": "6.3\" Super Actua LTPO OLED, 2856x1280, 120Hz",
+      "camera": "50MP main (f/1.68) + 48MP ultrawide + 48MP telephoto (5x)",
+      "battery": "4700mAh, 27W wired, 21W wireless",
+      "os": "Android 15",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.3, UWB",
+      "durability": "IP68, Gorilla Glass Victus 2"
+    },
+    "features": [
+      "Google Tensor G4 chip optimized for on-device AI and machine learning",
+      "Triple camera system with 50MP main and 5x optical zoom telephoto",
+      "Gemini AI integration for smart assistance and real-time translations",
+      "7 years of OS and security updates guaranteed",
+      "Magic Eraser, Best Take, and AI Zoom Enhance photo editing"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 10,
+    "name": "OnePlus 13 5G",
+    "category": "phones",
+    "price": 799.99,
+    "description": "The OnePlus 13 5G delivers flagship performance at an unbeatable price, packing the Snapdragon 8 Elite processor, 16GB of RAM, and a gorgeous 6.82-inch 2K LTPO AMOLED display into a beautifully crafted design. The Hasselblad-tuned triple camera system produces natural, true-to-life colors with its 50MP main sensor, 50MP ultrawide, and 64MP periscope telephoto lens with 3x optical zoom. A massive 6000mAh battery with 100W SUPERVOOC wired charging fills from zero to 100% in just 36 minutes, eliminating battery anxiety entirely. OxygenOS 15 based on Android 15 delivers a clean, fast, and bloatware-free software experience that power users crave.",
+    "specs": {
+      "processor": "Snapdragon 8 Elite",
+      "ram": "16GB LPDDR5X",
+      "storage": "256GB UFS 4.0",
+      "display": "6.82\" 2K LTPO AMOLED, 3168x1440, 120Hz, 4500 nits peak",
+      "camera": "50MP main (Sony LYT-808) + 50MP ultrawide + 64MP periscope telephoto (3x)",
+      "battery": "6000mAh, 100W wired, 50W wireless",
+      "os": "OxygenOS 15 (Android 15)",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.4",
+      "durability": "IP69, Gorilla Glass 7i"
+    },
+    "features": [
+      "Snapdragon 8 Elite with 16GB RAM for uncompromising performance",
+      "6000mAh battery with 100W charging — 0 to 100% in 36 minutes",
+      "Hasselblad-tuned triple camera system for natural color science",
+      "IP69 rating — the highest water and dust resistance in a smartphone",
+      "4 years of OS updates and 6 years of security patches"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 11,
+    "name": "Sony WH-1000XM6",
+    "category": "audio",
+    "price": 399.99,
+    "description": "The Sony WH-1000XM6 sets a new standard for premium wireless noise-cancelling headphones with the next-generation Integrated Processor V3 that analyzes ambient sound 4x faster than its predecessor. The newly designed 30mm carbon fiber composite drivers deliver audiophile-grade sound with extended bass, pristine mids, and detailed highs that reveal every nuance in your music. An industry-leading 40 hours of battery life with quick charge support — 3 hours of playback from just 3 minutes of charging — means you'll rarely think about plugging in. With Multipoint connectivity for seamless switching between two devices and Speak-to-Chat that auto-pauses your music, these headphones adapt to your life effortlessly.",
+    "specs": {
+      "driver": "30mm carbon fiber composite",
+      "processor": "Integrated Processor V3",
+      "noise_cancellation": "Adaptive Sound Control with Auto NC Optimizer",
+      "battery": "40 hours (ANC on), 50 hours (ANC off)",
+      "charging": "USB-C, 3 min charge = 3 hours playback",
+      "connectivity": "Bluetooth 5.4, LDAC, Multipoint",
+      "weight": "227g",
+      "codecs": "LDAC, AAC, SBC, LC3",
+      "microphones": "8 microphones for ANC and calls"
+    },
+    "features": [
+      "Industry-leading noise cancellation with Auto NC Optimizer",
+      "40-hour battery life with quick charge (3 min = 3 hours)",
+      "Multipoint Bluetooth for seamless dual-device connectivity",
+      "Speak-to-Chat automatically pauses music when you talk",
+      "360 Reality Audio and DSEE Extreme upscaling for Hi-Res sound"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": 12,
+    "name": "Bose QC Ultra Earbuds",
+    "category": "audio",
+    "price": 299.99,
+    "description": "The Bose QuietComfort Ultra Earbuds represent the pinnacle of wireless earbud technology, combining world-class noise cancellation with Bose Immersive Audio for a spatial sound experience that places you at the center of your music. The CustomTune technology calibrates sound and ANC to the unique shape of your ear within seconds of putting them in, ensuring a personalized listening experience every time. Six microphones per earbud work together to silence the world around you or let it in with full Aware mode transparency. With a snug, secure fit from the new umbrella-shaped ear tips and IPX4 water resistance, they're equally at home during intense workouts and quiet commutes.",
+    "specs": {
+      "driver": "9.3mm custom Bose transducer",
+      "noise_cancellation": "Bose CustomTune ANC",
+      "battery_earbuds": "6 hours",
+      "battery_case": "24 hours total",
+      "connectivity": "Bluetooth 5.3, Multipoint",
+      "water_resistance": "IPX4",
+      "charging": "USB-C, Qi wireless",
+      "weight": "6.24g per earbud",
+      "codecs": "AAC, SBC, aptX Adaptive"
+    },
+    "features": [
+      "Bose Immersive Audio with head tracking for spatial sound",
+      "CustomTune calibration for personalized sound and ANC",
+      "World-class noise cancellation with full Transparency mode",
+      "Multipoint connectivity for switching between phone and laptop",
+      "IPX4 sweat and water resistance for workouts"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 13,
+    "name": "Apple Watch Ultra 3",
+    "category": "wearables",
+    "price": 799.99,
+    "description": "The Apple Watch Ultra 3 is built for adventure and endurance, featuring a rugged 49mm titanium case with a sapphire crystal display that's readable even in direct sunlight at 3000 nits peak brightness. Powered by the S10 chip with on-device Apple Intelligence, it delivers advanced health monitoring including blood pressure tracking, sleep apnea detection, and continuous blood oxygen measurement. The integrated dual-frequency GPS with L1 and L5 bands provides pinpoint accuracy in dense forests, deep canyons, and urban jungles. With up to 72 hours of battery life in Low Power Mode and 100m water resistance with depth gauge and water temperature sensor, it's the ultimate companion for divers, hikers, and endurance athletes.",
+    "specs": {
+      "chip": "Apple S10",
+      "display": "49mm LTPO3 OLED, 3000 nits, sapphire crystal",
+      "battery": "Up to 36 hours (72 hours Low Power Mode)",
+      "water_resistance": "100m (EN 13319 certified for diving)",
+      "connectivity": "LTE, Wi-Fi 6, Bluetooth 5.3, L1+L5 GPS",
+      "sensors": "Blood pressure, SpO2, ECG, temperature, depth gauge",
+      "case_material": "Grade 5 Titanium",
+      "storage": "64GB",
+      "os": "watchOS 12"
+    },
+    "features": [
+      "Blood pressure monitoring and sleep apnea detection",
+      "72-hour battery life in Low Power Mode for multi-day adventures",
+      "Precision dual-frequency GPS with L1 and L5 satellite bands",
+      "100m water resistance with depth gauge and water temperature sensor",
+      "Action Button and customizable Modular Ultra watch face"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": 14,
+    "name": "Galaxy Watch 7 Pro",
+    "category": "wearables",
+    "price": 449.99,
+    "description": "The Samsung Galaxy Watch 7 Pro combines premium titanium construction with Samsung's most advanced health and fitness tracking technology powered by the Exynos W1000 processor. The 47mm sapphire crystal display with 3000 nits brightness ensures perfect readability in any lighting condition, while the rotating digital bezel provides intuitive navigation through Wear OS 5. Advanced BioActive Sensor 2.0 enables comprehensive health monitoring including body composition analysis, irregular heart rhythm notification, and continuous skin temperature tracking. With built-in GPS supporting multi-band positioning and turn-by-turn navigation with offline maps, it's the perfect smartwatch for outdoor enthusiasts and fitness fanatics.",
+    "specs": {
+      "processor": "Exynos W1000 (3nm)",
+      "display": "47mm Super AMOLED, 1.47\", 480x480, 3000 nits",
+      "battery": "590mAh, up to 80 hours in battery saver",
+      "water_resistance": "5ATM + IP68, MIL-STD-810H",
+      "connectivity": "LTE, Wi-Fi, Bluetooth 5.3, GPS (L1+L5)",
+      "sensors": "BioActive 2.0, barometer, compass, thermometer",
+      "case_material": "Grade 4 Titanium",
+      "storage": "32GB",
+      "os": "Wear OS 5 with One UI Watch 6"
+    },
+    "features": [
+      "Body composition analysis with BIA measurement (fat, muscle, water)",
+      "Multi-band GPS with offline maps and turn-by-turn navigation",
+      "Titanium case with sapphire crystal for rugged durability",
+      "Sleep coaching with advanced snore detection and blood oxygen tracking",
+      "Wear OS 5 with access to Google Play Store apps"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 15,
+    "name": "Galaxy Tab S10 Ultra",
+    "category": "tablets",
+    "price": 1199.99,
+    "description": "The Galaxy Tab S10 Ultra is Samsung's most expansive and powerful tablet, featuring a massive 14.6-inch Dynamic AMOLED 2X display with 2960x1848 resolution and 120Hz refresh rate that makes it perfect for multitasking, creative work, and entertainment. Powered by the MediaTek Dimensity 9300+ processor with 12GB of RAM, it effortlessly runs Samsung DeX desktop mode for a full PC-like experience. The included S Pen with ultra-low latency transforms the tablet into a digital canvas for artists and note-takers, while the quad-speaker setup tuned by AKG with Dolby Atmos delivers immersive sound. With an optional Book Cover Keyboard and multi-window support for up to three apps simultaneously, this tablet is a true laptop replacement.",
+    "specs": {
+      "processor": "MediaTek Dimensity 9300+",
+      "ram": "12GB",
+      "storage": "256GB (expandable via microSD up to 1.5TB)",
+      "display": "14.6\" Dynamic AMOLED 2X, 2960x1848, 120Hz",
+      "camera": "13MP + 8MP rear, 12MP + 12MP front",
+      "battery": "11200mAh, 45W fast charging",
+      "connectivity": "Wi-Fi 7, Bluetooth 5.3, optional 5G",
+      "weight": "718g (1.58 lbs)",
+      "os": "Android 15 with One UI 7"
+    },
+    "features": [
+      "14.6-inch Dynamic AMOLED 2X display — the largest in any tablet",
+      "Included S Pen with ultra-low 2.8ms latency for natural drawing",
+      "Samsung DeX for a full desktop experience with keyboard and mouse",
+      "Quad speakers tuned by AKG with Dolby Atmos surround sound",
+      "Multi-window support for running up to 3 apps side-by-side"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 16,
+    "name": "MagSafe Duo Charger",
+    "category": "accessories",
+    "price": 129.99,
+    "description": "The MagSafe Duo Charger is the ultimate nightstand companion for Apple users, simultaneously charging your iPhone and Apple Watch with perfectly aligned magnetic precision. The foldable design snaps shut into a compact puck that fits in your pocket or travel bag, making it the ideal charging solution for frequent travelers. Delivering up to 15W of fast wireless charging to your iPhone and fast charging to your Apple Watch, it ensures both devices are fully powered by morning. The premium aluminum and silicone construction is built to last, and the integrated cable management keeps your desk clutter-free.",
+    "specs": {
+      "iphone_charging": "Up to 15W MagSafe",
+      "watch_charging": "Apple Watch fast charging",
+      "compatibility": "iPhone 12 and later, Apple Watch Series 7 and later",
+      "input": "USB-C, 30W adapter recommended",
+      "dimensions": "Folded: 11.8 x 8.4 x 2.6 cm",
+      "weight": "132g",
+      "materials": "Aluminum base, silicone charging surface",
+      "cable_length": "1m USB-C"
+    },
+    "features": [
+      "Simultaneously charges iPhone and Apple Watch",
+      "Magnetic alignment ensures perfect positioning every time",
+      "Foldable compact design for easy travel",
+      "Supports Apple Watch fast charging for 80% in 45 minutes"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": 17,
+    "name": "Anker 737 Power Bank",
+    "category": "accessories",
+    "price": 109.99,
+    "description": "The Anker 737 Power Bank packs a massive 24,000mAh capacity into a surprisingly portable package, capable of charging a MacBook Air, iPhone, and iPad simultaneously with its 140W maximum combined output. The smart digital display shows real-time wattage, remaining capacity percentage, and estimated time to full recharge, so you always know exactly where you stand. PowerIQ 4.0 technology intelligently detects your device and delivers the optimal charging speed, while bidirectional USB-C PD 3.1 support means the power bank itself recharges in under 2 hours. Built with automotive-grade lithium-ion cells and ActiveShield 2.0 safety technology, it's engineered for reliability on every adventure.",
+    "specs": {
+      "capacity": "24000mAh / 86.4Wh",
+      "max_output": "140W USB-C PD 3.1",
+      "ports": "2x USB-C, 1x USB-A",
+      "recharge_time": "Under 2 hours (140W input)",
+      "display": "LED smart display (wattage, %, ETA)",
+      "weight": "630g (1.39 lbs)",
+      "dimensions": "15.7 x 5.5 x 4.9 cm",
+      "safety": "ActiveShield 2.0, FCC/UL certified",
+      "airline_approved": "Yes (under 100Wh per FAA rules: No — 86.4Wh approved)"
+    },
+    "features": [
+      "140W USB-C output charges a MacBook Air at full speed",
+      "24,000mAh capacity for multiple full phone charges",
+      "Smart LED display shows real-time wattage and battery percentage",
+      "Recharges itself in under 2 hours with 140W input",
+      "Airline-approved 86.4Wh capacity for worry-free travel"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 18,
+    "name": "Logitech MX Master 3S",
+    "category": "accessories",
+    "price": 99.99,
+    "description": "The Logitech MX Master 3S is the gold standard for productivity mice, featuring an ergonomic sculpted design that fits the natural curve of your hand for all-day comfort. The MagSpeed electromagnetic scroll wheel delivers ultra-fast, precise scrolling at up to 1,000 lines per second — fast enough to scroll through a massive spreadsheet in seconds, yet precise enough to stop on a single pixel. An 8K DPI track-on-glass sensor works flawlessly on virtually any surface, including glass, eliminating the need for a mouse pad. With Logi Flow cross-computer control, you can seamlessly move your cursor between up to three computers and even copy-paste text and files between them.",
+    "specs": {
+      "sensor": "Darkfield 8000 DPI track-on-glass",
+      "scroll": "MagSpeed electromagnetic (1000 lines/sec)",
+      "buttons": "7 programmable buttons + gesture button",
+      "battery": "70 days on full charge, 3 hours from 1 min charge",
+      "connectivity": "Bluetooth LE, Logi Bolt USB (2.4GHz)",
+      "compatibility": "Windows, macOS, iPadOS, ChromeOS, Linux",
+      "weight": "141g",
+      "charging": "USB-C"
+    },
+    "features": [
+      "MagSpeed scroll wheel — 1,000 lines per second, ultra-quiet",
+      "Track-on-glass 8K DPI sensor works on any surface including glass",
+      "Logi Flow: seamless cursor movement and file transfer across 3 computers",
+      "Ergonomic sculpted shape with thumb rest for all-day comfort",
+      "70-day battery life with quick charge (1 min = 3 hours)"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": 19,
+    "name": "Samsung T9 SSD 2TB",
+    "category": "accessories",
+    "price": 179.99,
+    "description": "The Samsung T9 Portable SSD 2TB delivers blazing-fast transfer speeds of up to 2,000 MB/s via USB 3.2 Gen 2x2, making it twice as fast as its predecessor and perfect for transferring large video files, game libraries, and photo collections in seconds. The rugged aluminum housing with an internal rubber frame provides shock resistance for drops up to 3 meters, while IP65 water and dust resistance means it can handle outdoor shoots and field work without worry. Dynamic Thermal Guard technology prevents overheating during sustained transfers, ensuring consistent performance even under heavy workloads. At just 98g and small enough to clip onto a camera strap, it's the perfect portable storage solution for professionals on the move.",
+    "specs": {
+      "capacity": "2TB",
+      "interface": "USB 3.2 Gen 2x2 (20Gbps)",
+      "read_speed": "Up to 2,000 MB/s",
+      "write_speed": "Up to 2,000 MB/s",
+      "encryption": "AES 256-bit hardware encryption",
+      "durability": "3m drop resistant, IP65 water/dust resistant",
+      "dimensions": "88 x 60 x 14 mm",
+      "weight": "98g",
+      "included_cables": "USB-C to USB-C, USB-C to USB-A"
+    },
+    "features": [
+      "2,000 MB/s read/write speeds via USB 3.2 Gen 2x2",
+      "Rugged design with 3-meter drop protection and IP65 rating",
+      "AES 256-bit hardware encryption for data security",
+      "Dynamic Thermal Guard prevents performance throttling",
+      "Compact 98g pocket-sized design with built-in carabiner loop"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 20,
+    "name": "Keychron K3 Pro",
+    "category": "accessories",
+    "price": 89.99,
+    "description": "The Keychron K3 Pro is an ultra-slim 75% wireless mechanical keyboard that combines premium typing feel with remarkable portability at just 16mm thick. Featuring hot-swappable low-profile Gateron mechanical switches, you can customize your typing experience by swapping switches without soldering — choose from tactile, linear, or clicky options to match your preference. The keyboard connects via Bluetooth 5.1 to up to three devices or through USB-C for a lag-free wired experience, making it perfect for switching between your Mac, Windows PC, and tablet. White LED backlighting with adjustable brightness illuminates the PBT keycaps for comfortable typing in any lighting condition, while the 4000mAh battery delivers up to 200 hours of use on a single charge.",
+    "specs": {
+      "layout": "75% (84 keys)",
+      "switches": "Gateron low-profile mechanical (hot-swappable)",
+      "connectivity": "Bluetooth 5.1 (3 devices) + USB-C wired",
+      "battery": "4000mAh, up to 200 hours (backlight off)",
+      "backlight": "White LED, adjustable brightness",
+      "keycaps": "PBT double-shot",
+      "compatibility": "macOS, Windows, Linux, iOS, Android",
+      "dimensions": "306 x 116 x 16 mm",
+      "weight": "395g"
+    },
+    "features": [
+      "Hot-swappable low-profile Gateron mechanical switches",
+      "Ultra-slim 16mm profile — thinnest mechanical keyboard in its class",
+      "Bluetooth 5.1 with seamless switching between 3 devices",
+      "PBT double-shot keycaps for durability and premium feel",
+      "macOS and Windows compatible with dedicated key layouts"
+    ],
+    "rating": 4.5
+  }
+]

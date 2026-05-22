@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Zap, Mail, Lock, Eye, EyeOff, ArrowRight, User } from "lucide-react";
 
 interface FormErrors {
@@ -20,6 +21,7 @@ export default function SignupPage() {
   const [showConfirm, setShowConfirm] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
@@ -52,15 +54,31 @@ export default function SignupPage() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      const res = await fetch("/api/auth/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, password }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.message || "Failed to create account");
+      }
+
+      alert("Account created successfully! Please log in.");
+      router.push("/login");
+    } catch (error: any) {
+      setErrors({ email: error.message });
+    } finally {
       setIsSubmitting(false);
-      alert("Signup functionality will be connected to the backend in a future task.");
-    }, 1000);
+    }
   };
 
   return (
