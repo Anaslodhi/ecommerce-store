@@ -23,7 +23,7 @@ To build a modern, responsive, and AI-powered e-commerce storefront for electron
 - **Vector DB**: Qdrant Cloud (free tier) for product embeddings and semantic search
 - **Database**: Neon Serverless Postgres for persisting chat history
 - **LLM**: OpenAI API (GPT-3.5/4) for generating chatbot responses
-- **Deployment**: Vercel (frontend), Railway or Render (backend)
+- **Deployment**: Vercel (frontend and backend)
 
 ## Design Guidelines
 

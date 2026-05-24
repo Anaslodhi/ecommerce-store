@@ -13,7 +13,7 @@
 | LLM          | OpenAI API (GPT-3.5-turbo / GPT-4)     |
 | Vector DB    | Qdrant Cloud (Free Tier)                |
 | Database     | Neon Serverless Postgres                |
-| Deployment   | Vercel (frontend), Render (backend)     |
+| Deployment   | Vercel (frontend & backend)             |
 
 ---
 
@@ -129,7 +129,7 @@ ecommerce-store/
 - Accessibility audit and fixes
 - Write comprehensive README.md (with both team member names, setup instructions, screenshots)
 - Deploy frontend to Vercel
-- Deploy backend to Render / Railway
+- Deploy backend to Vercel
 - Record 2–3 minute demo video
 
 ---
@@ -152,7 +152,7 @@ ecommerce-store/
 - [ ] ChatWidget component on frontend
 - [ ] Mobile-responsive across all pages
 - [ ] Performance optimized
-- [ ] Deployed to Vercel + Render
+- [ ] Deployed to Vercel
 - [ ] README.md with full documentation
 
 ---

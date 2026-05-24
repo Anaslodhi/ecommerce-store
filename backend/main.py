@@ -16,10 +16,7 @@ app = FastAPI(
 # CORS — allow frontend origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        os.getenv("FRONTEND_URL", "http://localhost:3000"),
-    ],
+    allow_origins=["*"], # [INSERT VERCEL LINK HERE] if you want to restrict origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
