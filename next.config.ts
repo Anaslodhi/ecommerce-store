@@ -13,6 +13,18 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/api/chat",
+        destination: "/api/index",
+      },
+      {
+        source: "/api/history/:path*",
+        destination: "/api/index",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
