@@ -17,7 +17,10 @@ class ChatResponse(BaseModel):
 async def chat(request: ChatRequest):
     try:
         # 1. Search relevant products from Qdrant
-        relevant_products = qdrant_service.search_products(request.query, top_k=3)
+        try:
+            relevant_products = qdrant_service.search_products(request.query, top_k=3)
+        except Exception as e:
+            return ChatResponse(response=f"Error connecting to Qdrant Database: {e}", session_id=request.session_id)
         
         # 2. Build context from retrieved products
         context_parts = []
@@ -36,11 +39,14 @@ async def chat(request: ChatRequest):
         history = db_service.get_history(request.session_id, limit=10)
         
         # 4. Generate response via OpenAI
-        response_text = gemini_service.generate_chat_response(
-            query=request.query,
-            context=context,
-            chat_history=history
-        )
+        try:
+            response_text = gemini_service.generate_chat_response(
+                query=request.query,
+                context=context,
+                chat_history=history
+            )
+        except Exception as e:
+            return ChatResponse(response=f"Error from Gemini AI API: {e}", session_id=request.session_id)
         
         # 5. Save messages to DB
         db_service.save_message(request.session_id, "user", request.query)
@@ -52,7 +58,7 @@ async def chat(request: ChatRequest):
             products=relevant_products
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        return ChatResponse(response=f"General Error: {str(e)}", session_id=request.session_id)
 
 @router.get("/history/{session_id}")
 async def get_chat_history(session_id: str):
