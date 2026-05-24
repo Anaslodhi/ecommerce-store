@@ -25,7 +25,10 @@ app.add_middleware(
 # Initialize DB on startup
 @app.on_event("startup")
 async def startup():
-    db_service.init_db()
+    try:
+        db_service.init_db()
+    except Exception as e:
+        print(f"Failed to initialize database on startup: {e}")
 
 # Include routers
 app.include_router(chat.router, prefix="/api", tags=["Chat"])
