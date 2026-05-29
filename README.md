@@ -70,8 +70,8 @@ Make sure you have the following installed on your system:
 2. Install the necessary dependencies:
 npm install
 
-3. Create a .env.local file in the root directory and add the backend URL:
-NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
+3. Create a .env.local file in the root directory and add the backend URL: NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
+
 *(For deployment, you will change this to your live Vercel backend URL)*
 
 4. Start the development server:
@@ -126,6 +126,6 @@ The backend exposes the following primary endpoints for the chatbot:
 ---
 
 ## 🔗 Important Links
-🔗 **Live Demo Link**: https://technest-frontend.vercel.app
-🔗 **Backend API Link**: https://technest-backend.vercel.app
-🔗 **Demo Video Link**: [Please insert YouTube/Drive Video Link here]
+🔗 **Live Demo Link**: https://technest-store.vercel.app/
+🔗 **Backend API Link**: https://technest-ecommerce-store.vercel.app
+🔗 **Demo Video Link**: https://youtu.be/nsVM93Jdx9E
